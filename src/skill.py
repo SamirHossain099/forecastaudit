@@ -1,4 +1,4 @@
-"""Skill scores against a naive baseline — closing the "0.0265 WIS compared to what?" objection.
+"""Skill scores against a naive baseline: closing the "0.0265 WIS compared to what?" objection.
 
 An absolute WIS is uninterpretable. Forecast-evaluation practice is to report skill relative to a
 naive reference, and a reviewer will ask for it immediately.
@@ -112,7 +112,7 @@ def main():
 
     df = add_bins(pd.read_csv(a.infile))
     if "naive" not in df.columns:
-        print("no `naive` column — re-run score_matched.py after the baseline was added")
+        print("no `naive` column: re-run score_matched.py after the baseline was added")
         return 1
     ok = df[np.isfinite(df.naive)]
     print(f"{a.label}: {len(df):,} scored points, {len(ok):,} with a naive baseline "

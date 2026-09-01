@@ -29,14 +29,14 @@ def pinball_mean(q, y, tau):
 
 
 def _total_order(n=100, seed=0):
-    """Intervals increasing in BOTH bounds — the partial order collapses to a total one."""
+    """Intervals increasing in BOTH bounds: the partial order collapses to a total one."""
     rng = np.random.default_rng(seed)
     lo = np.sort(rng.uniform(0, 1, n))
     return lo, lo + 0.05, lo + rng.normal(0, 0.2, n)
 
 
 def _partial_order(n=120, seed=0):
-    """Nested intervals — genuinely incomparable pairs."""
+    """Nested intervals: genuinely incomparable pairs."""
     rng = np.random.default_rng(seed)
     lo = rng.uniform(0, 1, n)
     hi = lo + rng.uniform(0.01, 0.4, n)

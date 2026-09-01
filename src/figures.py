@@ -30,7 +30,7 @@ LEVELS = (50, 80, 95)
 
 
 def wilson(k, n, z=1.96):
-    """Wilson interval — honest at the small n some horizon bins have."""
+    """Wilson interval: honest at the small n some horizon bins have."""
     if n == 0:
         return (np.nan, np.nan)
     p = k / n
@@ -313,7 +313,7 @@ def main():
     os.makedirs(a.outdir, exist_ok=True)
     dfs = {b: d for b in BRANCHES if (d := load(b)) is not None}
     if not dfs:
-        print("no score files yet — run score_matched.py first")
+        print("no score files yet: run score_matched.py first")
         return 1
     for b, d in dfs.items():
         print(f"  {b}: {len(d):,} points, {d.forecast_date.nunique()} forecast dates")

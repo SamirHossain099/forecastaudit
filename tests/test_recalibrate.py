@@ -96,7 +96,7 @@ def test_conformal_quantile_returns_none_below_min_n():
 
 
 def test_conformal_quantile_saturates_when_n_too_small_for_alpha():
-    """With n=10 and alpha=0.05, ceil(11*0.95)=11 > 10 — must fall back to the max."""
+    """With n=10 and alpha=0.05, ceil(11*0.95)=11 > 10: must fall back to the max."""
     s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     assert rc.conformal_q(s, alpha=0.05, min_n=5) == 10.0
 

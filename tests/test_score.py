@@ -83,7 +83,7 @@ def test_extract_forecast_keeps_only_forecast_site():
 
 
 def test_extract_drops_nulls_rather_than_coercing():
-    """A null value must vanish, never become 0.0 — that would fake a zero frequency."""
+    """A null value must vanish, never become 0.0: that would fake a zero frequency."""
     o = _obj([
         {"site": "weekly_raw_freq", "location": "X", "variant": "A", "date": "2024-01-01",
          "value": None},
@@ -189,6 +189,6 @@ def test_wis_and_coverage_agree_in_direction():
         pytest.skip("no scored results on disk")
     df = pd.read_csv(p)
     g = df.groupby("forecast_date").agg(cov=("cov_95", "mean"), wis=("wis", "mean"))
-    # NB: g.cov is DataFrame.cov, the method — column access must be bracketed here.
+    # NB: g.cov is DataFrame.cov, the method: column access must be bracketed here.
     rho = np.corrcoef(g["cov"].rank(), g["wis"].rank())[0, 1]
     assert rho < -0.3, f"coverage and WIS should be negatively ranked, got rho={rho:.3f}"

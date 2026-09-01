@@ -139,7 +139,7 @@ def test_comparable_fraction_is_one_for_a_totally_ordered_family():
 
 
 def test_comparable_fraction_is_low_for_a_nested_family():
-    """Nested intervals are pairwise INcomparable — the pathology Remark 11 warns about."""
+    """Nested intervals are pairwise INcomparable: the pathology Remark 11 warns about."""
     hw = np.arange(1, 301, dtype=float)
     r = comparable_fraction(-hw, hw, np.random.default_rng(0), n_sample=300, repeats=1)
     assert r["comparable"] < 0.05

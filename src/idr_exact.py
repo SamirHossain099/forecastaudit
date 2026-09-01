@@ -221,7 +221,7 @@ def main():
 
     tot_viol = int((r.mcb_linear > r.mcb_exact + 1e-9).sum())
     print(f"\n  total ordering violations: {tot_viol}/{len(r)} "
-          f"(theory says 0 — the shortcut can never exceed the exact fit)")
+          f"(theory says 0: the shortcut can never exceed the exact fit)")
     print(f"  mean relative gap across all levels: {r.rel_gap.mean():.1%}")
     print(f"  median pairs per subsample: {r.n_pairs.median():,.0f}")
     print(f"  runtime: {time.time() - t0:.0f}s")

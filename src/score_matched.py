@@ -1,4 +1,4 @@
-"""Partition-matched scoring — the only well-defined way to score this archive.
+"""Partition-matched scoring: the only well-defined way to score this archive.
 
 Naive `(location, variant, date)` matching gives ~18% coverage for a nominal 95% interval. That
 number is an artifact: Nextstrain clades are hierarchical and the partition is redefined over

@@ -1,7 +1,7 @@
 """Measure how much the observed truth is revised, across slices of the archive.
 
 F1 established on ONE slice (open/clades/global) that observed frequencies are revised for 100%
-of date-variant pairs within two months, by up to 0.53. One slice is an anecdote — in projects 01
+of date-variant pairs within two months, by up to 0.53. One slice is an anecdote: in projects 01
 and 04 roughly half the single-slice claims did not replicate.
 
 This measures the revision profile across branches, lineage schemes and regions, and compares

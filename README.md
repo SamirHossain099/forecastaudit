@@ -1,6 +1,6 @@
 # forecastaudit
 
-Scoring, decomposing and recalibrating **archived probabilistic forecasts** — forecasts that were
+Scoring, decomposing and recalibrating **archived probabilistic forecasts**: forecasts that were
 published and timestamped before their outcomes existed.
 
 This is the code behind *Skillful but overconfident: scoring the archived real-time SARS-CoV-2
@@ -16,7 +16,7 @@ matched pairs) does neither:
 1. **Backfill-aware truth.** Observed frequencies for a past date keep changing as sequences are
    deposited, so "the outcome" depends on when you look.
 2. **Partition matching.** The categories these forecasts are defined over are redefined roughly
-   every three to five weeks — faster than the observations settle. Matching a forecast to an
+   every three to five weeks, faster than the observations settle. Matching a forecast to an
    outcome *by label* therefore compares different quantities, and produces coverage numbers that
    are artifacts. `score_matched` restricts comparison to snapshots sharing an identical category
    set.
@@ -56,6 +56,19 @@ committed; they skip with `no scored results on disk` until you regenerate it wi
 | `recalibrate` | conformalized quantile regression applied out-of-time by rolling origin |
 | `skill`, `clustered`, `stratified`, `heterosked`, `selection` | baselines and the robustness battery |
 
+## The data
+
+Public, no credentials, no account. The archive is at
+
+    s3://nextstrain-data/files/workflows/forecasts-ncov/
+
+with the influenza replication set at `files/workflows/forecasts-flu/`. Note the prefix depth:
+`forecasts-ncov/` on its own returns zero objects.
+
+One thing worth knowing before writing a loader. The server sets `Content-Encoding: gzip` and
+`requests` decompresses transparently, so `r.json()` works directly. The files are not gzip
+members despite the `.json` extension, and calling `gzip.decompress()` on the body raises.
+
 ## Reproducing the paper
 
 Every figure and table is regenerated from `results/` by:
@@ -70,7 +83,7 @@ reported number traces to a file there.
 ## A note on the estimator
 
 Isotonic quantile regression under a partial order is not solvable by pool-adjacent-violators.
-`idr_decompose` fits along linear extensions instead, which is provably conservative — more
+`idr_decompose` fits along linear extensions instead, which is provably conservative: more
 constraints can only make the fit worse, so the reported miscalibration is a lower bound.
 `idr_exact` measures how loose that bound is by solving the exact problem as a linear program on
 matched subsamples. On the archive in the paper the shortcut understates miscalibration by 3.8% on

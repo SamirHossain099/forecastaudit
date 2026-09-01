@@ -119,7 +119,7 @@ def test_decomposition_identity_holds_for_one_quantile():
 
 
 def test_mcb_is_non_negative():
-    """Miscalibration cannot be negative — recalibration cannot hurt in-sample."""
+    """Miscalibration cannot be negative: recalibration cannot hurt in-sample."""
     rng = np.random.default_rng(7)
     q = rng.uniform(0, 1, 800)
     y = rng.uniform(0, 1, 800)
@@ -183,7 +183,7 @@ def test_real_miscalibration_is_a_large_share_of_the_score():
 
 
 def test_real_discrimination_is_positive_everywhere():
-    """The forecasts do carry information — the paper is not a debunking."""
+    """The forecasts do carry information: the paper is not a debunking."""
     for label in ("gisaid", "open", "flu"):
         assert _real(label)["overall"]["dsc"] > 0
 

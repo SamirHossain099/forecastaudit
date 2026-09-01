@@ -84,7 +84,7 @@ def comparable_fraction(lo, hi, rng, n_sample=4000, repeats=5):
 
 
 def zero_arm_fraction(df, lvl):
-    """Points where the median sits on an interval endpoint — a nesting generator."""
+    """Points where the median sits on an interval endpoint: a nesting generator."""
     lo, hi, m = df[f"lo_{lvl}"], df[f"hi_{lvl}"], df["median"]
     lower_arm = (m - lo).abs()
     upper_arm = (hi - m).abs()

@@ -2,7 +2,7 @@
 
 numpy/OpenBLAS reads OMP_NUM_THREADS and friends at IMPORT time. `resources` sets them. If an
 auto-formatter (ruff's isort, in practice) reorders the import block and numpy lands first, the
-thread cap silently stops working — the code still runs, the machine still becomes unusable.
+thread cap silently stops working: the code still runs, the machine still becomes unusable.
 That happened once; this test is why it cannot happen again.
 
 The imports are fenced with `# isort: off` / `# isort: on`. This test guards the fence.
@@ -27,7 +27,7 @@ def entry_points():
 
 
 def test_there_are_entry_points_to_check():
-    assert entry_points(), "no guarded entry points found — did the guard get stripped?"
+    assert entry_points(), "no guarded entry points found: did the guard get stripped?"
 
 
 def test_resources_precedes_numpy_everywhere():

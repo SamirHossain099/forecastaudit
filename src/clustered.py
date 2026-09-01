@@ -96,7 +96,7 @@ def ci(vals, level=95):
 
 
 def naive_binomial_ci(p, n, level=95):
-    """Wilson interval, assuming independence — the thing we are replacing."""
+    """Wilson interval, assuming independence: the thing we are replacing."""
     z = {90: 1.645, 95: 1.96, 99: 2.576}[level]
     d = 1 + z ** 2 / n
     c = (p + z ** 2 / (2 * n)) / d
@@ -199,7 +199,7 @@ def main():
     print("\n=== verdict ===")
     c95 = res["bootstrap"]["coverage_95"]
     print(f"  95% coverage {c95['estimate']:.3f}, clustered CI "
-          f"[{c95['lo']:.3f}, {c95['hi']:.3f}] — nominal 0.950 is "
+          f"[{c95['lo']:.3f}, {c95['hi']:.3f}]: nominal 0.950 is "
           f"{'OUTSIDE' if c95['hi'] < 0.95 else 'inside'} the interval.")
     print(f"  The clustered interval is {c95['width_ratio']:.0f}x wider than the i.i.d. one.")
     print(f"  Effective sample size for coverage: ~{deff['cov_95']['n_eff']:,.0f}, "

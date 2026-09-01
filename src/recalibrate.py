@@ -1,4 +1,4 @@
-"""Deliverable 2 — how much of the coverage deficit is recoverable post hoc?
+"""Deliverable 2: how much of the coverage deficit is recoverable post hoc?
 
 F7 established that the archived intervals are severely overconfident (95% HDI covers 0.392) and
 that the failure is *width*, not bias (bias^2/MSE = 1.9%). It also showed the miss is strongly

@@ -120,7 +120,7 @@ def test_naive_intervals_are_ordered_and_nested():
 def test_empirical_intervals_reach_roughly_nominal_on_stationary_data():
     """Sanity: on data whose residual distribution is stable, the construction should work.
 
-    This is also the caveat made explicit — the baseline's calibration is largely a property of
+    This is also the caveat made explicit: the baseline's calibration is largely a property of
     the construction, which is exactly why F11 does not claim the naive MODEL has better
     uncertainty quantification.
     """

@@ -181,7 +181,7 @@ def main():
     df = pd.read_csv(a.infile)
     need = [c for _, c in QUANTILES if c not in df.columns]
     if need:
-        print(f"missing quantile columns {need} — re-run score_matched.py")
+        print(f"missing quantile columns {need}: re-run score_matched.py")
         return 1
     print(f"{a.label}: {len(df):,} points, {len(QUANTILES)} quantile levels, {a.bins} PAV bins")
 

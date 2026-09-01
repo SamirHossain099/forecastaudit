@@ -99,7 +99,7 @@ def main():
     cand = [k for k, _ in keys if k.endswith(".json")]
     print(f"   {len(cand):,} .json keys")
     if not cand:
-        print("   no .json keys found — the brief's assumption is wrong")
+        print("   no .json keys found: the brief's assumption is wrong")
         return 1
     target = sorted(cand)[len(cand) // 2]
     r = requests.get(BUCKET + target, timeout=180)
@@ -138,7 +138,7 @@ def main():
         print(f"   HEAD {t}\n   -> HTTP {h.status_code}, "
               f"{int(h.headers.get('Content-Length', 0)):,} bytes  (no credential sent)")
     else:
-        print("   none found under this prefix — brief's claim needs re-checking")
+        print("   none found under this prefix: brief's claim needs re-checking")
 
     os.makedirs("results", exist_ok=True)
     with open("results/verify_inventory.json", "w") as fh:

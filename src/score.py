@@ -1,4 +1,4 @@
-"""Score the archived forecasts — the thing nobody has done.
+"""Score the archived forecasts: the thing nobody has done.
 
 Ground-truth convention (decided from evidence in FINDINGS.md, stated here because the whole
 audit rests on it):
@@ -57,7 +57,7 @@ def load_snapshot(key, cache=True):
     """Fetch a snapshot, memoised.
 
     Partition-matched scoring asks "which snapshots share this forecast's variant set?" for every
-    forecast date. Without a cache that is O(n_forecast_dates x n_snapshots) downloads —
+    forecast date. Without a cache that is O(n_forecast_dates x n_snapshots) downloads,
     40 x 770 = ~31,000 requests, which is why the first attempt had to be killed. With the cache
     it is one download per snapshot.
     """
@@ -94,7 +94,7 @@ def cache_stats():
 
 
 def partition_index(snaps, stride=1, verbose=True):
-    """{snapshot_date: frozenset(variants)} — one pass over the archive.
+    """{snapshot_date: frozenset(variants)}: one pass over the archive.
 
     Loading metadata still requires the whole object, so this is the expensive step; doing it
     once and reusing it is what makes partition matching tractable.
@@ -159,7 +159,7 @@ def is_catchall(variant):
 
     So `other` means "everything except 23B/23F/23I" in one file and "everything except
     25B/25I/25C" in another. Scoring a forecast of one against an observation of the other
-    compares different quantities that happen to share a label — the same label-semantics trap
+    compares different quantities that happen to share a label: the same label-semantics trap
     that invalidated a naive cross-cohort comparison in the B-ALL work.
 
     Named clades/lineages ('23B', 'JN.1', ...) do have stable meaning and are safe to score.
@@ -213,7 +213,7 @@ def build_settled_truth_partition_matched(snaps, forecast_date, site="freq",
                                           min_lag_days=60, max_lag_days=400, verbose=False):
     """Truth for ONE forecast date, taken only from snapshots using the SAME variant partition.
 
-    Why this is necessary — and why the naive audit fails:
+    Why this is necessary: and why the naive audit fails:
 
     Nextstrain clades are HIERARCHICAL. When a clade's descendants are later split out as their
     own clades, the parent's label narrows to mean only the residual. Concretely, a 2024-09-26
@@ -225,7 +225,7 @@ def build_settled_truth_partition_matched(snaps, forecast_date, site="freq",
     therefore only comparable between two snapshots that use the same partition.
 
     So: score a forecast only against truth drawn from snapshots whose `variants` set is
-    identical to the forecast snapshot's. This is restrictive — it discards most of the archive —
+    identical to the forecast snapshot's. This is restrictive (it discards most of the archive)
     but it is the only comparison that is well defined.
     """
     f_d = dt.date.fromisoformat(forecast_date)
@@ -268,7 +268,7 @@ def build_settled_truth(snaps, site="weekly_raw_freq", min_lag_days=60,
     points on 1 forecast date for exactly this reason.
 
     Correct definition: for each (location, variant, date), take the value from the NEWEST
-    snapshot published at least `min_lag_days` after that date — the most-settled observation
+    snapshot published at least `min_lag_days` after that date: the most-settled observation
     that still satisfies the lag requirement. Walking newest -> oldest and never overwriting an
     existing key gives that in one pass.
 
