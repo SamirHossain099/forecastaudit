@@ -1,0 +1,5 @@
+# Normalize line endings: authored on Windows, CI runs on Linux.
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.docx binary

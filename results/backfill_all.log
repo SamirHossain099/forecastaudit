@@ -1,0 +1,89 @@
+  open/nextstrain_clades/global daily_raw_freq   lag= 14d n=  242 changed=92.6% >0.05=9.9% max=0.132
+  open/nextstrain_clades/global daily_raw_freq   lag= 30d n=  210 changed=95.7% >0.05=30.5% max=0.500
+  open/nextstrain_clades/global daily_raw_freq   lag= 60d n=  150 changed=100.0% >0.05=50.0% max=0.531
+  open/nextstrain_clades/global daily_raw_freq   lag=120d n=   30 changed=100.0% >0.05=83.3% max=0.531
+  open/nextstrain_clades/global weekly_raw_freq  lag= 14d n=  242 changed=86.0% >0.05=3.3% max=0.097
+  open/nextstrain_clades/global weekly_raw_freq  lag= 30d n=  210 changed=97.6% >0.05=26.7% max=0.374
+  open/nextstrain_clades/global weekly_raw_freq  lag= 60d n=  150 changed=98.7% >0.05=40.0% max=0.372
+  open/nextstrain_clades/global weekly_raw_freq  lag=120d n=   30 changed=100.0% >0.05=76.7% max=0.373
+  open/nextstrain_clades/usa: ref 2024-06-01 absent, using 2023-02-18 (-469d)
+  open/nextstrain_clades/usa daily_raw_freq: no 'daily_raw_freq' records in 2023-02-18
+  open/nextstrain_clades/usa: ref 2024-06-01 absent, using 2023-02-18 (-469d)
+  open/nextstrain_clades/usa weekly_raw_freq: no 'weekly_raw_freq' records in 2023-02-18
+  open/pango_lineages/global daily_raw_freq   lag= 14d n=1,936 changed=70.5% >0.05=3.3% max=0.273
+  open/pango_lineages/global daily_raw_freq   lag= 30d n=1,365 changed=82.5% >0.05=7.9% max=0.274
+  open/pango_lineages/global daily_raw_freq   lag= 60d n=  825 changed=96.1% >0.05=14.7% max=0.335
+  open/pango_lineages/global daily_raw_freq   lag=120d n=   90 changed=97.8% >0.05=41.1% max=0.230
+  open/pango_lineages/global weekly_raw_freq  lag= 14d n=1,936 changed=75.6% >0.05=2.2% max=0.228
+  open/pango_lineages/global weekly_raw_freq  lag= 30d n=1,365 changed=85.0% >0.05=6.2% max=0.225
+  open/pango_lineages/global weekly_raw_freq  lag= 60d n=  825 changed=97.3% >0.05=9.7% max=0.273
+  open/pango_lineages/global weekly_raw_freq  lag=120d n=   90 changed=100.0% >0.05=33.3% max=0.156
+  open/pango_lineages/usa: no snapshots
+  open/pango_lineages/usa: no snapshots
+  gisaid/nextstrain_clades/global daily_raw_freq   lag= 14d n=6,190 changed=23.9% >0.05=5.6% max=0.583
+  gisaid/nextstrain_clades/global daily_raw_freq   lag= 30d n=3,824 changed=42.7% >0.05=10.7% max=0.500
+  gisaid/nextstrain_clades/global daily_raw_freq   lag= 60d n=2,553 changed=60.8% >0.05=25.4% max=0.923
+  gisaid/nextstrain_clades/global daily_raw_freq   lag=120d n=  510 changed=87.5% >0.05=53.3% max=0.867
+  gisaid/nextstrain_clades/global weekly_raw_freq  lag= 14d n=5,770 changed=39.8% >0.05=2.9% max=0.419
+  gisaid/nextstrain_clades/global weekly_raw_freq  lag= 30d n=3,716 changed=62.5% >0.05=4.8% max=0.212
+  gisaid/nextstrain_clades/global weekly_raw_freq  lag= 60d n=2,325 changed=87.8% >0.05=17.5% max=0.401
+  gisaid/nextstrain_clades/global weekly_raw_freq  lag=120d n=  444 changed=98.2% >0.05=39.2% max=0.395
+  gisaid/nextstrain_clades/usa: ref 2024-06-01 absent, using 2023-02-11 (-476d)
+  gisaid/nextstrain_clades/usa daily_raw_freq: no 'daily_raw_freq' records in 2023-02-11
+  gisaid/nextstrain_clades/usa: ref 2024-06-01 absent, using 2023-02-11 (-476d)
+  gisaid/nextstrain_clades/usa weekly_raw_freq: no 'weekly_raw_freq' records in 2023-02-11
+  gisaid/pango_lineages/global daily_raw_freq   lag= 14d n=37,587 changed=17.1% >0.05=2.2% max=1.000
+  gisaid/pango_lineages/global daily_raw_freq   lag= 30d n=26,922 changed=27.0% >0.05=3.7% max=1.000
+  gisaid/pango_lineages/global daily_raw_freq   lag= 60d n=12,908 changed=41.8% >0.05=8.2% max=1.000
+  gisaid/pango_lineages/global daily_raw_freq   lag=120d n=2,023 changed=66.1% >0.05=22.6% max=1.000
+  gisaid/pango_lineages/global weekly_raw_freq  lag= 14d n=37,179 changed=31.7% >0.05=1.5% max=0.427
+  gisaid/pango_lineages/global weekly_raw_freq  lag= 30d n=26,586 changed=46.5% >0.05=2.7% max=0.427
+  gisaid/pango_lineages/global weekly_raw_freq  lag= 60d n=12,684 changed=65.7% >0.05=6.4% max=0.427
+  gisaid/pango_lineages/global weekly_raw_freq  lag=120d n=1,887 changed=87.0% >0.05=19.9% max=0.473
+  gisaid/pango_lineages/usa: no snapshots
+  gisaid/pango_lineages/usa: no snapshots
+
+wrote results/backfill_profile_all.csv  (32 rows)
+
+=== does the revision profile replicate across slices? ===
+
+daily_raw_freq:
+               median                             min                             max                   
+         frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs
+lag_days                                                                                                
+14              0.472      0.045   0.428        0.171      0.022   0.132        0.926      0.099   1.000
+30              0.626      0.093   0.500        0.270      0.037   0.274        0.957      0.305   1.000
+60              0.785      0.200   0.727        0.418      0.082   0.335        1.000      0.500   1.000
+120             0.926      0.472   0.699        0.661      0.226   0.230        1.000      0.833   1.000
+  slices per lag: {14: 4, 30: 4, 60: 4, 120: 4}
+
+weekly_raw_freq:
+               median                             min                             max                   
+         frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs
+lag_days                                                                                                
+14              0.577      0.025   0.324        0.317      0.015   0.097        0.860      0.033   0.427
+30              0.737      0.055   0.299        0.465      0.027   0.212        0.976      0.267   0.427
+60              0.926      0.136   0.387        0.657      0.064   0.273        0.987      0.400   0.427
+120             0.991      0.363   0.384        0.870      0.199   0.156        1.000      0.767   0.473
+  slices per lag: {14: 4, 30: 4, 60: 4, 120: 4}
+
+=== daily vs weekly: which is the more stable scoring target? ===
+  weekly more stable than daily in 16/16 slice-lags
+site                                      daily_raw_freq  weekly_raw_freq
+branch scheme            region lag_days                                 
+gisaid nextstrain_clades global 14                 0.056            0.029
+                                30                 0.107            0.048
+                                60                 0.254            0.175
+                                120                0.533            0.392
+       pango_lineages    global 14                 0.022            0.015
+                                30                 0.037            0.027
+                                60                 0.082            0.064
+                                120                0.226            0.199
+open   nextstrain_clades global 14                 0.099            0.033
+                                30                 0.305            0.267
+                                60                 0.500            0.400
+                                120                0.833            0.767
+       pango_lineages    global 14                 0.033            0.022
+                                30                 0.079            0.062
+                                60                 0.147            0.097
+                                120                0.411            0.333

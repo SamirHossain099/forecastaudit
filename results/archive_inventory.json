@@ -1,0 +1,50 @@
+{
+  "open/nextstrain_clades/global": {
+    "n": 732,
+    "first": "2022-12-23",
+    "last": "2026-08-29",
+    "span": 1346,
+    "per_day": 0.5438335809806835,
+    "med_gap": 1
+  },
+  "open/nextstrain_clades/usa": {
+    "n": 46,
+    "first": "2022-12-23",
+    "last": "2023-02-18",
+    "span": 58,
+    "per_day": 0.7931034482758621,
+    "med_gap": 1
+  },
+  "open/pango_lineages/global": {
+    "n": 607,
+    "first": "2023-04-25",
+    "last": "2026-08-29",
+    "span": 1223,
+    "per_day": 0.4963205233033524,
+    "med_gap": 1
+  },
+  "gisaid/nextstrain_clades/global": {
+    "n": 770,
+    "first": "2022-12-23",
+    "last": "2026-08-24",
+    "span": 1341,
+    "per_day": 0.5741983594332588,
+    "med_gap": 1
+  },
+  "gisaid/nextstrain_clades/usa": {
+    "n": 39,
+    "first": "2022-12-23",
+    "last": "2023-02-11",
+    "span": 51,
+    "per_day": 0.7647058823529411,
+    "med_gap": 1
+  },
+  "gisaid/pango_lineages/global": {
+    "n": 679,
+    "first": "2023-04-25",
+    "last": "2026-08-24",
+    "span": 1218,
+    "per_day": 0.5574712643678161,
+    "med_gap": 1
+  }
+}

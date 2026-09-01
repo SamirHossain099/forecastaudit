@@ -1,0 +1,43 @@
+{
+  "label": "gisaid",
+  "n": 105349,
+  "n_forecast_dates": 48,
+  "levels": {
+    "50": {
+      "pooled_comparable": 0.9893433108277069,
+      "pooled_se": 0.00042223047544535285,
+      "within_date_median": 0.9894421105276319,
+      "within_date_min": 0.9629560915275202,
+      "within_date_max": 0.9995362435729408,
+      "isotonic_rank_corr": 0.9412412777723774,
+      "zero_lower": 0.31902533483943846,
+      "zero_upper": 0.29408917028163534,
+      "zero_either": 0.38626849803984853,
+      "zero_width": 0.22684600708122526
+    },
+    "80": {
+      "pooled_comparable": 0.9760198049512377,
+      "pooled_se": 0.0005947123447779973,
+      "within_date_median": 0.976894223555889,
+      "within_date_min": 0.9256545042259328,
+      "within_date_max": 0.9984115403056013,
+      "isotonic_rank_corr": 0.9435542118276579,
+      "zero_lower": 0.25625302565757624,
+      "zero_upper": 0.20835508642701878,
+      "zero_either": 0.30355295256718146,
+      "zero_width": 0.16105515951741356
+    },
+    "95": {
+      "pooled_comparable": 0.9601700425106277,
+      "pooled_se": 0.002039093894561116,
+      "within_date_median": 0.9618534321431245,
+      "within_date_min": 0.8933518862090291,
+      "within_date_max": 0.9976879389723426,
+      "isotonic_rank_corr": 0.9451200924024747,
+      "zero_lower": 0.2255835366258816,
+      "zero_upper": 0.15164833078624382,
+      "zero_either": 0.2576958490351119,
+      "zero_width": 0.11953601837701354
+    }
+  }
+}

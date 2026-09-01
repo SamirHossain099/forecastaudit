@@ -1,0 +1,57 @@
+  open/nextstrain_clades/global daily_raw_freq   lag= 14d n=  242 changed=92.6% >0.05=9.9% max=0.132
+  open/nextstrain_clades/global daily_raw_freq   lag= 30d n=  210 changed=95.7% >0.05=30.5% max=0.500
+  open/nextstrain_clades/global daily_raw_freq   lag= 60d n=  150 changed=100.0% >0.05=50.0% max=0.531
+  open/nextstrain_clades/global daily_raw_freq   lag=120d n=   30 changed=100.0% >0.05=83.3% max=0.531
+  open/nextstrain_clades/global weekly_raw_freq  lag= 14d n=  242 changed=86.0% >0.05=3.3% max=0.097
+  open/nextstrain_clades/global weekly_raw_freq  lag= 30d n=  210 changed=97.6% >0.05=26.7% max=0.374
+  open/nextstrain_clades/global weekly_raw_freq  lag= 60d n=  150 changed=98.7% >0.05=40.0% max=0.372
+  open/nextstrain_clades/global weekly_raw_freq  lag=120d n=   30 changed=100.0% >0.05=76.7% max=0.373
+  open/pango_lineages/global daily_raw_freq   lag= 14d n=1,936 changed=70.5% >0.05=3.3% max=0.273
+  open/pango_lineages/global daily_raw_freq   lag= 30d n=1,365 changed=82.5% >0.05=7.9% max=0.274
+  open/pango_lineages/global daily_raw_freq   lag= 60d n=  825 changed=96.1% >0.05=14.7% max=0.335
+  open/pango_lineages/global daily_raw_freq   lag=120d n=   90 changed=97.8% >0.05=41.1% max=0.230
+  open/pango_lineages/global weekly_raw_freq  lag= 14d n=1,936 changed=75.6% >0.05=2.2% max=0.228
+  open/pango_lineages/global weekly_raw_freq  lag= 30d n=1,365 changed=85.0% >0.05=6.2% max=0.225
+  open/pango_lineages/global weekly_raw_freq  lag= 60d n=  825 changed=97.3% >0.05=9.7% max=0.273
+  open/pango_lineages/global weekly_raw_freq  lag=120d n=   90 changed=100.0% >0.05=33.3% max=0.156
+  gisaid/nextstrain_clades/global daily_raw_freq: SKIP TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+  gisaid/nextstrain_clades/global weekly_raw_freq: SKIP TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+  gisaid/pango_lineages/global daily_raw_freq: SKIP TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+  gisaid/pango_lineages/global weekly_raw_freq: SKIP TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+
+wrote results/backfill_profile.csv  (16 rows)
+
+=== does the revision profile replicate across slices? ===
+
+daily_raw_freq:
+               median                             min                             max                   
+         frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs
+lag_days                                                                                                
+14              0.815      0.066   0.203        0.705      0.033   0.132        0.926      0.099   0.273
+30              0.891      0.192   0.387        0.825      0.079   0.274        0.957      0.305   0.500
+60              0.981      0.323   0.433        0.961      0.147   0.335        1.000      0.500   0.531
+120             0.989      0.622   0.380        0.978      0.411   0.230        1.000      0.833   0.531
+  slices per lag: {14: 2, 30: 2, 60: 2, 120: 2}
+
+weekly_raw_freq:
+               median                             min                             max                   
+         frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs frac_changed frac_gt_05 max_abs
+lag_days                                                                                                
+14              0.808      0.027   0.163        0.756      0.022   0.097        0.860      0.033   0.228
+30              0.913      0.164   0.299        0.850      0.062   0.225        0.976      0.267   0.374
+60              0.980      0.248   0.323        0.973      0.097   0.273        0.987      0.400   0.372
+120             1.000      0.550   0.265        1.000      0.333   0.156        1.000      0.767   0.373
+  slices per lag: {14: 2, 30: 2, 60: 2, 120: 2}
+
+=== daily vs weekly: which is the more stable scoring target? ===
+  weekly more stable than daily in 8/8 slice-lags
+site                                      daily_raw_freq  weekly_raw_freq
+branch scheme            region lag_days                                 
+open   nextstrain_clades global 14                 0.099            0.033
+                                30                 0.305            0.267
+                                60                 0.500            0.400
+                                120                0.833            0.767
+       pango_lineages    global 14                 0.033            0.022
+                                30                 0.079            0.062
+                                60                 0.147            0.097
+                                120                0.411            0.333

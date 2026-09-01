@@ -1,0 +1,34 @@
+partition-matched scoring: gisaid/nextstrain_clades/global vs 'freq'
+  building partition index over 770 snapshots...
+    partition index 50/770
+    partition index 100/770
+    partition index 150/770
+    partition index 200/770
+    partition index 250/770
+    partition index 300/770
+    partition index 350/770
+    partition index 400/770
+    partition index 450/770
+    partition index 500/770
+    partition index 550/770
+    partition index 600/770
+    partition index 650/770
+    partition index 700/770
+    partition index 750/770
+    [16/25] 2024-10-23: +819 scored (total 819)
+
+=== how much of the archive is auditable at all? ===
+  forecast dates examined      : 25
+  with >=1 matching-partition snapshot : 1
+  with usable truth points     : 1
+  median matching snapshots    : 0
+
+wrote results/scores_matched_gisaid.csv  (819 points)
+
+=== coverage vs nominal (partition-matched) ===
+  50% HDI -> empirical 0.074   (nominal 0.50)
+  80% HDI -> empirical 0.168   (nominal 0.80)
+  95% HDI -> empirical 0.237   (nominal 0.95)
+
+  mean WIS 0.0325   mean |error| 0.0432
+  819 points over 1 forecast dates

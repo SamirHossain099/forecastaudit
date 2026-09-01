@@ -1,0 +1,130 @@
+[
+  {
+    "branch": "gisaid",
+    "min_lag_days": 0,
+    "n_dates": 110,
+    "n_auditable": 110,
+    "frac": 1.0,
+    "median_matches": 16.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 7,
+    "n_dates": 110,
+    "n_auditable": 87,
+    "frac": 0.7909090909090909,
+    "median_matches": 10.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 14,
+    "n_dates": 110,
+    "n_auditable": 67,
+    "frac": 0.6090909090909091,
+    "median_matches": 4.5
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 21,
+    "n_dates": 110,
+    "n_auditable": 56,
+    "frac": 0.509090909090909,
+    "median_matches": 1.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 30,
+    "n_dates": 110,
+    "n_auditable": 45,
+    "frac": 0.4090909090909091,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 45,
+    "n_dates": 110,
+    "n_auditable": 33,
+    "frac": 0.3,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 60,
+    "n_dates": 110,
+    "n_auditable": 17,
+    "frac": 0.15454545454545454,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "gisaid",
+    "min_lag_days": 90,
+    "n_dates": 110,
+    "n_auditable": 2,
+    "frac": 0.01818181818181818,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 0,
+    "n_dates": 105,
+    "n_auditable": 105,
+    "frac": 1.0,
+    "median_matches": 16.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 7,
+    "n_dates": 105,
+    "n_auditable": 81,
+    "frac": 0.7714285714285715,
+    "median_matches": 10.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 14,
+    "n_dates": 105,
+    "n_auditable": 66,
+    "frac": 0.6285714285714286,
+    "median_matches": 5.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 21,
+    "n_dates": 105,
+    "n_auditable": 53,
+    "frac": 0.5047619047619047,
+    "median_matches": 1.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 30,
+    "n_dates": 105,
+    "n_auditable": 40,
+    "frac": 0.38095238095238093,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 45,
+    "n_dates": 105,
+    "n_auditable": 24,
+    "frac": 0.22857142857142856,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 60,
+    "n_dates": 105,
+    "n_auditable": 15,
+    "frac": 0.14285714285714285,
+    "median_matches": 0.0
+  },
+  {
+    "branch": "open",
+    "min_lag_days": 90,
+    "n_dates": 105,
+    "n_auditable": 2,
+    "frac": 0.01904761904761905,
+    "median_matches": 0.0
+  }
+]

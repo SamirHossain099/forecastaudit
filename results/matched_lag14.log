@@ -1,0 +1,7 @@
+partition-matched scoring: gisaid/nextstrain_clades/global vs 'freq'
+  building partition index over 770 snapshots...
+    partition index 50/770
+    partition index 100/770
+    partition index 150/770
+    partition index 200/770
+    partition index 250/770

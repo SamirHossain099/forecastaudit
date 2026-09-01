@@ -1,0 +1,9 @@
+# Local environment only. Everything in this repository is here because it was
+# explicitly copied in, not because it escaped a filter.
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+data/
+.pytest_cache/
+.ruff_cache/

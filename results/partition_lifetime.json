@@ -1,0 +1,7 @@
+{
+  "n_sampled": 105,
+  "n_distinct_partitions": 28,
+  "median_lifetime_days": 22.0,
+  "frac_ge_60d": 0.1782178217821782,
+  "frac_ge_30d": 0.40594059405940597
+}

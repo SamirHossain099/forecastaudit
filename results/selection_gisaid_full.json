@@ -1,0 +1,72 @@
+{
+  "label": "gisaid_full",
+  "n_sampled": 110,
+  "n_auditable": 67,
+  "features": {
+    "partition_size": {
+      "auditable": 7.966101694915254,
+      "excluded": 7.425,
+      "t": 1.1759958658039324,
+      "p": 0.23959652810624738
+    },
+    "n_locations": {
+      "auditable": 15.711864406779661,
+      "excluded": 13.35,
+      "t": 2.2775127145668117,
+      "p": 0.022755626240468216
+    },
+    "n_variants": {
+      "auditable": 6.966101694915254,
+      "excluded": 6.425,
+      "t": 1.1759958658039324,
+      "p": 0.23959652810624738
+    },
+    "mean_width_95": {
+      "auditable": 0.04141161815430771,
+      "excluded": 0.02947008681114821,
+      "t": 2.373068490393455,
+      "p": 0.01764099239677013
+    },
+    "mean_median": {
+      "auditable": 0.15943127544051566,
+      "excluded": 0.1788522227999057,
+      "t": -1.0954734340022765,
+      "p": 0.2733092779285177
+    },
+    "frac_below_1pct": {
+      "auditable": 0.4317098286755945,
+      "excluded": 0.53264166523415,
+      "t": -2.11961862266109,
+      "p": 0.03403822069529013
+    },
+    "days_from_start": {
+      "auditable": 401.2881355932203,
+      "excluded": 416.0,
+      "t": -0.29554696995864377,
+      "p": 0.7675760770113775
+    }
+  },
+  "by_time_quartile": {
+    "Q1 (early)": {
+      "auditable_rate": 0.76,
+      "n": 25
+    },
+    "Q2": {
+      "auditable_rate": 0.36,
+      "n": 25
+    },
+    "Q3": {
+      "auditable_rate": 0.5833333333333334,
+      "n": 24
+    },
+    "Q4 (late)": {
+      "auditable_rate": 0.68,
+      "n": 25
+    }
+  },
+  "significant": [
+    "n_locations",
+    "mean_width_95",
+    "frac_below_1pct"
+  ]
+}
