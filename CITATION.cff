@@ -10,7 +10,7 @@ authors:
     given-names: Samir
     email: samir.hossain@ttu.edu
     affiliation: "Department of Electrical and Computer Engineering, Texas Tech University"
-version: 0.1.0
+version: 0.1.1
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22225040

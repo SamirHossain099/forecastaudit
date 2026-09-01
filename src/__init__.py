@@ -7,4 +7,4 @@ discrimination and uncertainty, `idr_exact` bounds the shortcut used by the seco
 an exact linear program, and `recalibrate` applies conformal correction out of time.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

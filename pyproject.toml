@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "forecastaudit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Partition-matched scoring, WIS decomposition and out-of-time recalibration for archived probabilistic forecasts"
 readme = "README.md"
 requires-python = ">=3.11"

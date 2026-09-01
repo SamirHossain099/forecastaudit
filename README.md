@@ -47,7 +47,7 @@ committed; they skip with `no scored results on disk` until you regenerate it wi
 
 | Module | What it does |
 |---|---|
-| `score` | snapshot loader (the archive is gzipped despite a `.json` extension), WIS, interval scores |
+| `score` | snapshot loader, WIS, interval scores |
 | `backfill` | backfill-aware truth construction and the settling-lag profile |
 | `score_matched` | partition-matched scoring; keeps the raw interval bounds, which matters because most intervals are asymmetric about the median |
 | `decompose` | quantile-wise MCB / DSC / UNC decomposition of the WIS |
@@ -77,8 +77,9 @@ Every figure and table is regenerated from `results/` by:
 python src/figures.py
 ```
 
-The scoring pipeline that produces `results/` is documented in `VERIFICATION.md`, and every
-reported number traces to a file there.
+The pipeline that produces `results/` is `src/score_matched.py`. `RESULTS.md` records the
+numbers it yields, and `results/README.md` explains the file layout, including the `_full`
+suffix that distinguishes the full stride-7 run from an earlier capped one.
 
 ## A note on the estimator
 
