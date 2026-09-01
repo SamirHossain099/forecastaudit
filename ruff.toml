@@ -3,7 +3,7 @@ target-version = "py39"
 
 [lint]
 # Errors, pyflakes, imports, modernisation. Deliberately NOT enabling stylistic
-# rewrites (C4 dict-literal etc.) — they add churn without changing behaviour.
+# rewrites (C4 dict-literal etc.): they add churn without changing behaviour.
 select = ["E", "F", "W", "I", "UP"]
 ignore = [
     "E501",   # line length is handled by line-length above
